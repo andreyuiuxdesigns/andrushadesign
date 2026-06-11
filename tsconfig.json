@@ -1,0 +1,41 @@
+import Navbar from "@/components/layout/Navbar";
+import Footer from "@/components/layout/Footer";
+import HeroSection from "@/components/sections/HeroSection";
+import ProjectsSection from "@/components/sections/ProjectsSection";
+import AboutSection from "@/components/sections/AboutSection";
+import WhyChooseMeSection from "@/components/sections/WhyChooseMeSection";
+import PhotoGridSection from "@/components/sections/PhotoGridSection";
+import ContactsSection from "@/components/sections/ContactsSection";
+import SectionDivider from "@/components/ui/SectionDivider";
+
+export default function Home() {
+  return (
+    <main className="bg-white min-h-screen">
+      <Navbar />
+
+      {/* Hero */}
+      <HeroSection />
+
+      {/* Featured Projects */}
+      <ProjectsSection />
+
+      {/* About me divider + section */}
+      <SectionDivider label="About me" />
+      <AboutSection />
+
+      {/* Why choose me divider + section */}
+      <SectionDivider label="Why choose me?" />
+      <WhyChooseMeSection />
+
+      {/* Photo divider + grid */}
+      <SectionDivider label="" />
+      <PhotoGridSection />
+
+      {/* Contacts divider + section */}
+      <SectionDivider label="Contacts" />
+      <ContactsSection />
+
+      <Footer />
+    </main>
+  );
+}
